@@ -2,21 +2,11 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>시계</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="clock">
-        <div id="time"></div>
+    <div class="frame">
+        <img src="tapiebackground.png" >
     </div>
-    <script>
-        function updateTime() {
-            const now = new Date();
-            const time = now.toLocaleTimeString('ko-KR');
-            document.getElementById('time').textContent = time;
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
 </body>
 </html>
